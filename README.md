@@ -1,3 +1,4 @@
+https://github.com/user-attachments/assets/699feb69-3f4c-4ebc-af94-66960fe33afd
 # 🌦️ Dynamic Weather App
 
 A responsive and visually engaging Weather App built with **Vite + React**, integrating **Google Places API** for place autocomplete and **OpenWeatherMap API** for real-time weather data. The app features dynamic icons, background videos, and color-changing UI elements that adapt based on weather conditions and user searches.
