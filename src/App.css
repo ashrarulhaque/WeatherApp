@@ -1,0 +1,82 @@
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+    display: flex;
+    width: 100vw !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.btnsearch {
+  width: 2rem !important;
+  height: 4rem !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+}
+.card {
+  border-radius: 30px;
+  padding: 1rem;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.weatherInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  color: #000;
+}
+.weatherInfo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff !important;
+  padding: 1rem;
+}
+.weatherdetails {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000 !important;
+  border-radius: 20px !important;
+}
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.search-input {
+  background-color: #fff;
+  width: 40vw;
+  border-radius: 10px;
+}
+.weatherinfo-name, .weatherinfo-desc {
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.25rem;
+}
+.infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

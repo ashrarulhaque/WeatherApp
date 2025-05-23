@@ -1,0 +1,35 @@
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.watermark {
+  position: fixed;
+  top: 12%;
+  right: 32%;
+  font-size: clamp(8px, 1.5vw, 12px);
+  background-color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: rgba(256, 256, 256, 0.8); /* subtle visibility */
+  z-index: 9999;
+  pointer-events: none; /* allows clicks to pass through */
+  user-select: none;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
