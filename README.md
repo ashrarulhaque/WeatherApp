@@ -1,12 +1,94 @@
-# React + Vite
+# 🌦️ Dynamic Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and visually engaging Weather App built with **Vite + React**, integrating **Google Places API** for place autocomplete and **OpenWeatherMap API** for real-time weather data. The app features dynamic icons, background videos, and color-changing UI elements that adapt based on weather conditions and user searches.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔍 Features
 
-## Expanding the ESLint configuration
+- 🌐 **Google Places Autocomplete**  
+  Enter any city name with smart autocomplete suggestions powered by the Google Places API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ☀️ **Real-Time Weather Data**  
+  Fetches accurate and up-to-date weather data (temperature, humidity, description, etc.) using OpenWeatherMap API.
+
+- 🎨 **Randomized Info Box Colors**  
+  The weather information box changes to a random color on every new search, adding visual variety.
+
+- 🌡️ **Temperature-Based Icons**  
+  Displays a weather-representative icon next to the city name based on the temperature range:
+  - ☀️ Summer for ≥30°C
+  - 🌤️ Sunny for 20°C–30°C
+  - 🌬️ Cool for 10°C–20°C
+  - ❄️ Cold for ≤10°C
+
+- 🎥 **Dynamic Background Videos**  
+  Weather description (e.g., rain, clear, snow) triggers a background video that reflects the current condition visually.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **APIs**:
+  - [Google Places API](https://developers.google.com/maps/documentation/places/web-service/autocomplete)
+  - [OpenWeatherMap API](https://openweathermap.org/api)
+- **Styling**: CSS Modules / MUI (if used)
+- **State Management**: React `useState`, `useEffect`, `useRef`
+
+---
+
+## 🚀 Setup & Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Environment Variables:**
+
+   Create a `.env` file in the root with the following:
+   ```env
+   VITE_OpenWeather_API_Key=your_openweather_api_key
+   VITE_Google_API_Key=your_google_places_api_key
+   ```
+
+4. **Run the app locally:**
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 📁 Project Structure (Simplified)
+
+```
+src/
+├── assets/                # Weather videos (rain.mp4, sunny.webm, etc.)
+├── components/
+│   ├── SearchCard.jsx     # City input form with Google Autocomplete
+│   └── WeatherCard.jsx    # Displays weather info and icon
+├── App.jsx
+├── WeatherApp.jsx         # Main logic for state and data fetching
+└── utils/
+    ├── getWeatherImage.js # Maps weather descriptions to video
+    └── getWeatherData.js  # Fetches data from OpenWeatherMap
+```
+
+---
+
+## 🎨 Visual Demo
+
+
+---
+
+## 💡 Author
+
+Built by **Ashrarul Haque**  
+🔗 [GitHub](https://github.com/ashrarulhaque) | 💼 [LinkedIn](https://www.linkedin.com/in/ashrarul)
