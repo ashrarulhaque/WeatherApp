@@ -1,7 +1,13 @@
-https://github.com/user-attachments/assets/699feb69-3f4c-4ebc-af94-66960fe33afd
+![image](https://github.com/user-attachments/assets/acbbb7ac-f8fc-48af-aa57-fa22901d9410)
+
 # 🌦️ Dynamic Weather App
 
 A responsive and visually engaging Weather App built with **Vite + React**, integrating **Google Places API** for place autocomplete and **OpenWeatherMap API** for real-time weather data. The app features dynamic icons, background videos, and color-changing UI elements that adapt based on weather conditions and user searches.
+
+---
+
+## 🎨 Visual Demo
+https://www.loom.com/share/4b2ca30240f84a88a07e572a1bd6034b
 
 ---
 
@@ -36,56 +42,6 @@ A responsive and visually engaging Weather App built with **Vite + React**, inte
   - [OpenWeatherMap API](https://openweathermap.org/api)
 - **Styling**: CSS Modules / MUI (if used)
 - **State Management**: React `useState`, `useEffect`, `useRef`
-
----
-
-## 🚀 Setup & Installation
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/weather-app.git
-   cd weather-app
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Environment Variables:**
-
-   Create a `.env` file in the root with the following:
-   ```env
-   VITE_OpenWeather_API_Key=your_openweather_api_key
-   VITE_Google_API_Key=your_google_places_api_key
-   ```
-
-4. **Run the app locally:**
-   ```bash
-   npm run dev
-   ```
-
----
-
-## 📁 Project Structure (Simplified)
-
-```
-src/
-├── assets/                # Weather videos (rain.mp4, sunny.webm, etc.)
-├── components/
-│   ├── SearchCard.jsx     # City input form with Google Autocomplete
-│   └── WeatherCard.jsx    # Displays weather info and icon
-├── App.jsx
-├── WeatherApp.jsx         # Main logic for state and data fetching
-└── utils/
-    ├── getWeatherImage.js # Maps weather descriptions to video
-    └── getWeatherData.js  # Fetches data from OpenWeatherMap
-```
-
----
-
-## 🎨 Visual Demo
-
 
 ---
 
