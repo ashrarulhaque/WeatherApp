@@ -1,4 +1,6 @@
 ![image](https://github.com/user-attachments/assets/acbbb7ac-f8fc-48af-aa57-fa22901d9410)
+![image](https://github.com/user-attachments/assets/c1c71ccd-de04-42c1-840f-989bd6da41b0)
+
 
 # 🌦️ Dynamic Weather App
 
